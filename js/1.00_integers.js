@@ -14,4 +14,3 @@ var a = 43 + 4; // 47
 var b = 10 / 5; //2
 var c = 10 % 2; // 0 no remanders are left after the operation 0 even 1 odd
 
-console.log(b);

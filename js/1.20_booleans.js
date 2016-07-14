@@ -18,4 +18,8 @@ numOne < numTwo //true
 //undefined, null, "", 0,-0, NaN and False  all are considered False
 //objects, strings with values and numbers not 0 or -0 are all True
 
+//and(&&) or (||) not (!) string these guys together for mind melting
 
+1 && true 		//true  - both sides MUST be true
+false || true 	//true  - true when at least one side is true
+!true 			// false- toggles a statement between true and false
