@@ -15,6 +15,7 @@ for(var i = 0; i<10; i++){
 
 
 // for/in loops are pretty sweet when dealing with objects
+//refer to 1.70 for more info on how objects work
 var dog = {legs: 4, name: "lundy", favFood: "cat food", tricks: ["sit", "shake", "stay", "ignore everything"]};
 
    //traits refers to the variables inside of the dog
