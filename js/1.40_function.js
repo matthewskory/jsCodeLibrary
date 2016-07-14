@@ -10,5 +10,5 @@ function findAreaOfRectangle(x, y){
 console.log(findAreaOfRectangle(2,4)); // 8
 
 // variable scope - if you forget to add var inside the function it will become global (remove the var from line 5 to see what i mean)
-console.log(area); //oh snap! area was defined within the function so you cant have it globally 
+//console.log(area); //oh snap! area was defined within the function so you cant have it globally 
 
