@@ -14,3 +14,4 @@ var leftovers = stringTwo.slice(1, 5) //trin
 var upper = stringTwo.toUpperCase() //STRING
 var lower = stringTwo.toLowerCase() //string  - duh.
 
+var joinedStrings = stringOne + stringTwo; // I'm a string that's also a sentencestring
