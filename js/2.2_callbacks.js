@@ -23,14 +23,41 @@ var fruits = ["banana", "apple", "pear"];
 
 //async callback using jQuery -----------------------------------------------
 
-		$.get('/path/to/file', function(data) {
-			console.log(data)/*optional stuff to do after success */
-			console.log(test);
-		});
+			// $.get('/path/to/file', function(data) {
+			// 	console.log(data)optional stuff to do after success 
+			// 	console.log(test);
+			// });
 		//above codes will start the GET request, console log test then console log the data
 
 //avoid callback hell by not nesting multiple Callbacks
 	//create an error handler function like below
-		function handleError(error){
-			console.log(error);
-		})
+		// function handleError(error){
+		// 	console.log(error);
+		// })
+
+// ------------------corys example of callback hell--------------------------------
+  //****see promises for a better version***********
+var sleep = function(ms) {
+	return function(callback) {
+		setTimeout(callback, ms);	
+	};
+};
+
+var squareWithCallback = function(num, callback) {
+	sleep(1000).call(this, function() {
+		callback(num * num);
+	});
+};
+
+//below will wait for the num and then move onto the next one - taka long time!
+squareWithCallback(10, function(num) {
+	squareWithCallback(num, function(num) {
+		squareWithCallback(num, function(num) {
+			squareWithCallback(num, function(num){
+				squareWithCallback(num, function(num) {
+					console.log(num);
+				});
+			});
+		});
+	});
+});

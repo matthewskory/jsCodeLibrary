@@ -1,3 +1,10 @@
+//fat arrows
+
+var newEcho = (value) => {console.log(value)};
+newEcho("hi");
+
+
+
 var name = ["matt", "james", "ryan", "chris", "tara"].filter(n => n.length > 4);
 console.log(name); //[ 'james', 'chris' ]
 

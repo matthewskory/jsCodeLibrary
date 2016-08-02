@@ -15,3 +15,9 @@ var upper = stringTwo.toUpperCase() //STRING
 var lower = stringTwo.toLowerCase() //string  - duh.
 
 var joinedStrings = stringOne + stringTwo; // I'm a string that's also a sentencestring
+
+
+//substrings
+	//specify an index range to return
+string = "hello"
+console.log(string.substring(1,4)); //returns ell

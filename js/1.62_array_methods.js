@@ -39,7 +39,3 @@
 	console.log(total);
 
 
-//indexes ------------------------------------------------------
-	//Getting the index of the current element is trivial: it's the second argument for map, 
-	//filter and forEach, and the third argument for reduce. In other words, it comes after the 
-	//arguments I've shown in the examples so far.

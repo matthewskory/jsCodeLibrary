@@ -3,6 +3,32 @@
 
 	//created using promise constructor
 
+//from corys lession ---------------
+var sleep = function(ms) {
+	return function(callback) {
+		setTimeout(callback, ms);	
+	};
+};
+
+var square = function(num){
+	return new Promise(function(resolve, reject){
+		sleep(1000).call(this, function(){
+			resolve(num*num);
+		});
+	});
+};
+
+square(10)
+	.then(square)
+	.then(square)
+	.then(square)
+	.then(square)
+		// total is just a keyword for the expression in resolve
+	.then(function(total){
+		console.log(total)
+	});
+
+
 // var promise = new Promise( function(resolve, reject) { /* Promise content */ } )
 
 // //basic get function

@@ -1,0 +1,4 @@
+
+var name = (condition) ? value1:value2 
+
+var voteable = (age < 18) ? "Too young":"Old enough";
